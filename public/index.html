@@ -6,35 +6,68 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
     <script type="" src="test.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
          .guide {display: none;} 
-    </style>
+        html{font-family: 'Roboto', sans-serif; margin: 0;}
+        body{margin: 0; background-color: #f6f6f6;}
+        .flex{display: flex;}
+        .flex-1{flex: 1 1 0%;}
+        .flex-column{flex-direction: column};
+        .justify-center{ justify-content: center;}
+        .justify-start{ justify-content: flex-start;}
+        .justify-end{ justify-content: flex-end;}
+        .self-center{align-self: center;}
+        .self-start{align-self: flex-start;}
+        .self-end{align-self: flex-end;}
+        .ma-all-1{margin: 1rem;}
+        .ma-all-half{margin: .5rem;}
+        .ma-b-half{margin-bottom: .5rem;}
+        .ma-r-1{margin-right: 1rem; }
+        .pa-all-1{padding: 1rem;}
+        .pa-all-half{padding: .5rem;}
+        .car { background-color: #e9e9e9; border: 1px solid #ccc;}
+        header{background-color: #e9e9e9; border-bottom: 1px solid #ccc;}
+        .border-bottom{border-bottom: 1px solid #e9e9e9;}
+        ul,li{list-style-type: none; margin:0; padding:0;}
+        label{display: inline-block;}
+
+</style>
     </head>
    <body>
-      <h3 class="title">Simple nodejs API.</h3> 
-      <p>Available url:</p> 
+       <header class="pa-all-1 flex flex-1">
+            <i class="fa fa-file-code-o fa-2x self-center ma-r-1 flex" aria-hidden="true"></i>
+            <h3 class="title">Simple nodejs API.</h3> 
+       </header>
+    <div class="pa-all-1">
+      
+        <div class="list-link border-bottom">
+      <h4>Available url:</h4> 
       <ul>
-        <li><a href="http://localhost:3000/api/">http://localhost:3000/api/</a></li>
-        <li><a href="http://localhost:3000/api/vehicles">http://localhost:3000/api/vehicles</a></li>
-        <li>http://localhost:3000/api/vehicle/:vehicle_id</li>
-        <li>http://localhost:3000/api/vehicle/make/:make</li>
-        <li>http://localhost:3000/api/vehicle/model/:model</li>
-        <li>http://localhost:3000/api/vehicle/color/:color</li>
+        <li class="pa-all-half"><i class="fa fa-anchor ma-r-1" aria-hidden="true"></i><a href="http://localhost:3000/api/">http://localhost:3000/api/</a></li>
+        <li  class="pa-all-half"><i class="fa fa-anchor ma-r-1" aria-hidden="true"></i><a href="http://localhost:3000/api/vehicles">http://localhost:3000/api/vehicles</a></li>
+        <li  class="pa-all-half">http://localhost:3000/api/vehicle/:vehicle_id -- Replace :vehicle_id with car ID, Example: 596cb18d4480820a006290df </li>
+        <li  class="pa-all-half">http://localhost:3000/api/vehicle/make/:make -- Replace :make with car manufactor, Example: Ferrari</li>
+        <li  class="pa-all-half">http://localhost:3000/api/vehicle/model/:model -- Replace :model with car model, Example: California</li>
+        <li  class="pa-all-half">http://localhost:3000/api/vehicle/color/:color -- Replace :color with car color, Example: Red </li>
     </ul>
-    <hr/>
-    <h3>Get Data from Mongo DB</h3>
-    <label class="js-car-sum"></label> 
+    </div>
+
+    <h4>Get Data from Mongo DB</h4>
+    <label class="js-car-sum ma-b-half"></label> 
     <br/>
-    <div class="js-list"></div>
+    <div class="js-list flex flex-1"></div>
+    </div>
     
 <!-- Guide -->
 
     <div class="guide">
-        <ul class="js-car">
-        <li class="js-car-number"></li>
-        <li class="js-car-model"></li>
-        <li class="js-car-make"></li>
-        <li class="js-car-color"></li>
+        <ul class="js-car car ma-r-1">
+        <li class="js-car-number pa-all-half"></li>
+        <li class="js-car-model pa-all-half"></li>
+        <li class="js-car-make pa-all-half"></li>
+        <li class="js-car-color pa-all-half"></li>
     </ul>
     </div>
 
