@@ -35,7 +35,7 @@ router.use(function(req, res, next){
 // Test Route
 
 router.get('/', function(req, res){
-    res.json({message: 'Welcome to our API!'});
+    res.json({message: 'Welcome to our API'});
 });
 
 router.route('/vehicles')
@@ -111,6 +111,12 @@ router.route('/vehicle/color/:color')
         });
     });
 
+//Add a index page to the site
+app.use(express.static(__dirname + '/public'));
+
+app.get('*', function(req, res){
+  res.sendfile(__dirname + '/public/index.html');
+});
 
 // Fire up server
 
