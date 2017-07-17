@@ -32,19 +32,21 @@
         .border-bottom{border-bottom: 1px solid #e9e9e9;}
         ul,li{list-style-type: none; margin:0; padding:0;}
         label{display: inline-block;}
+        .car-number{border-bottom: 1px solid #ccc;}
+        .primary-bg{background-color: #e9e9e9;}
 
 </style>
     </head>
    <body>
        <header class="pa-all-1 flex flex-1">
             <i class="fa fa-file-code-o fa-2x self-center ma-r-1 flex" aria-hidden="true"></i>
-            <h3 class="title">Simple nodejs API.</h3> 
+            <h3 class="title">Simple nodejs API</h3> 
        </header>
     <div class="pa-all-1">
       
         <div class="list-link border-bottom">
       <h4>Available url:</h4> 
-      <ul>
+      <ul class="pa-all-1 primary-bg">
         <li class="pa-all-half"><i class="fa fa-anchor ma-r-1" aria-hidden="true"></i><a href="http://localhost:3000/api/">http://localhost:3000/api/</a></li>
         <li  class="pa-all-half"><i class="fa fa-anchor ma-r-1" aria-hidden="true"></i><a href="http://localhost:3000/api/vehicles">http://localhost:3000/api/vehicles</a></li>
         <li  class="pa-all-half">http://localhost:3000/api/vehicle/:vehicle_id -- Replace :vehicle_id with car ID, Example: 596cb18d4480820a006290df </li>
@@ -64,7 +66,7 @@
 
     <div class="guide">
         <ul class="js-car car ma-r-1">
-        <li class="js-car-number pa-all-half"></li>
+        <li class="js-car-number pa-all-half car-number"></li>
         <li class="js-car-model pa-all-half"></li>
         <li class="js-car-make pa-all-half"></li>
         <li class="js-car-color pa-all-half"></li>
