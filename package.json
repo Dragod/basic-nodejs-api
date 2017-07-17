@@ -1,5 +1,5 @@
 {
-  "name": "hello-world-api",
+  "name": "basic-nodejs-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
