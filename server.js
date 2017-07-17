@@ -1,3 +1,4 @@
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -115,7 +116,7 @@ router.route('/vehicle/color/:color')
 app.use(express.static(__dirname + '/public'));
 
 app.get('*', function(req, res){
-  res.sendfile(__dirname + '/public/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
 // Fire up server

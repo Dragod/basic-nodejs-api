@@ -1,9 +1,17 @@
 <html>
     <head>
          <title>Simple nodejs API</title>
+          <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script type="" src="test.js"></script>
+    <style>
+         .guide {display: none;} 
+    </style>
     </head>
    <body>
-      <h3>Welcome to Simple nodejs API.</h3> 
+      <h3 class="title">Simple nodejs API.</h3> 
       <p>Available url:</p> 
       <ul>
         <li><a href="http://localhost:3000/api/">http://localhost:3000/api/</a></li>
@@ -13,5 +21,22 @@
         <li>http://localhost:3000/api/vehicle/model/:model</li>
         <li>http://localhost:3000/api/vehicle/color/:color</li>
     </ul>
+    <hr/>
+    <h3>Get Data from Mongo DB</h3>
+    <label class="js-car-sum"></label> 
+    <br/>
+    <div class="js-list"></div>
+    
+<!-- Guide -->
+
+    <div class="guide">
+        <ul class="js-car">
+        <li class="js-car-number"></li>
+        <li class="js-car-model"></li>
+        <li class="js-car-make"></li>
+        <li class="js-car-color"></li>
+    </ul>
+    </div>
+
    </body>
 </html>
