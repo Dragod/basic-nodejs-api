@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
 var Vehicle = require('./app/models/vehicle');
 var mongoDb = require('./app/modules/dbConn');
 
